@@ -1,9 +1,9 @@
-# SSR-Prefetching
+# SSR(Server Side Rendering) Data Fetching
 
-Next.js의 SSR 환경에서 TanStack Query의 Prefetching을 사용하는 예시 코드입니다.
+Next.js의 getServerSideProps에서 React Query의 캐싱을 활용하는 예시 코드입니다.
 
-- Next.js의 getServerSideProps를 활용합니다.
-- TanStack Query의 Hydration을 활용합니다.
+- 상세 내용은 블로그에서 확인하실 수 있습니다.
+- [🔗 NextJS의 SSR (feat. getServerSideProps)](https://mnxmnz.github.io/nextjs/pre-rendering-and-data-fetching/)
 
 ## Getting Started
 
