@@ -1,6 +1,7 @@
 import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import type { AppProps } from 'next/app';
+import { useState } from 'react';
 
 import initMockAPI from '@/mocks';
 
@@ -9,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 function App({ Component, pageProps }: AppProps) {
-  const queryClient = new QueryClient();
+  const [queryClient] = useState(() => new QueryClient());
 
   return (
     <QueryClientProvider client={queryClient}>
